@@ -14,7 +14,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Fartlekr_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="center" text="Fartlekr" id="ZAy-Iz-Vxb">
+                        <label width="125" alignment="center" text="Fartlekr" textAlignment="center" id="ZAy-Iz-Vxb">
                             <fontDescription key="font" type="system" weight="semibold" pointSize="24"/>
                         </label>
                         <button width="1" alignment="center" title="Start" id="iIg-2C-FpQ">

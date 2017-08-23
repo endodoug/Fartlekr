@@ -13,11 +13,9 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
   @IBOutlet var titleLabel: WKInterfaceLabel!
-  @IBOutlet var textLabel: WKInterfaceLabel!
 
   @IBAction func startButtonTapped() {
     print("Start tapped")
-    textLabel.setText("🏃💨")
   }
 
 }

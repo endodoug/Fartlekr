@@ -17,7 +17,7 @@
                         <label width="125" alignment="center" text="Fartlekr" textAlignment="center" id="ZAy-Iz-Vxb">
                             <fontDescription key="font" type="system" weight="semibold" pointSize="24"/>
                         </label>
-                        <button width="1" alignment="center" title="Start" id="iIg-2C-FpQ">
+                        <button alignment="center" verticalAlignment="center" backgroundImage="StartButton" id="iIg-2C-FpQ">
                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" type="system" pointSize="18"/>
@@ -25,10 +25,8 @@
                                 <action selector="startButtonTapped" destination="AgC-eL-Hgc" id="Jia-Ym-bhU"/>
                             </connections>
                         </button>
-                        <label alignment="left" id="f4T-vx-Ugb"/>
                     </items>
                     <connections>
-                        <outlet property="textLabel" destination="f4T-vx-Ugb" id="5OL-rA-NLf"/>
                         <outlet property="titleLabel" destination="ZAy-Iz-Vxb" id="LAf-cF-w00"/>
                     </connections>
                 </controller>

@@ -16,6 +16,7 @@ class InterfaceController: WKInterfaceController {
 
   @IBAction func startButtonTapped() {
     print("Start tapped")
+    pushController(withName: "Menu", context: "Home")
   }
 
 }

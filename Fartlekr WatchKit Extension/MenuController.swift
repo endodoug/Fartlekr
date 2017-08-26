@@ -14,8 +14,11 @@ class MenuController: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
         // Configure interface objects here.
+      let backButtonText = context as! String
+      setTitle(backButtonText)
+      print("menu awake")
+      
     }
 
     override func willActivate() {

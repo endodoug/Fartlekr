@@ -19,6 +19,7 @@
 		B733C8E31F4BD8200019A8AC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B733C8E21F4BD8200019A8AC /* InterfaceController.swift */; };
 		B733C8E51F4BD8200019A8AC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B733C8E41F4BD8200019A8AC /* ExtensionDelegate.swift */; };
 		B733C8E71F4BD8200019A8AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B733C8E61F4BD8200019A8AC /* Assets.xcassets */; };
+		B7AEC3861F5116E0000F5C84 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AEC3851F5116E0000F5C84 /* MenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		B733C8E41F4BD8200019A8AC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		B733C8E61F4BD8200019A8AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B733C8E81F4BD8200019A8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7AEC3851F5116E0000F5C84 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				B733C8E21F4BD8200019A8AC /* InterfaceController.swift */,
+				B7AEC3851F5116E0000F5C84 /* MenuController.swift */,
 				B733C8E41F4BD8200019A8AC /* ExtensionDelegate.swift */,
 				B733C8E61F4BD8200019A8AC /* Assets.xcassets */,
 				B733C8E81F4BD8200019A8AC /* Info.plist */,
@@ -302,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B733C8E51F4BD8200019A8AC /* ExtensionDelegate.swift in Sources */,
+				B7AEC3861F5116E0000F5C84 /* MenuController.swift in Sources */,
 				B733C8E31F4BD8200019A8AC /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -559,6 +563,7 @@
 				B733C8ED1F4BD8200019A8AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B733C8EF1F4BD8200019A8AC /* Build configuration list for PBXNativeTarget "Fartlekr WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -567,6 +572,7 @@
 				B733C8F11F4BD8200019A8AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B733C8F31F4BD8200019A8AC /* Build configuration list for PBXNativeTarget "Fartlekr" */ = {
 			isa = XCConfigurationList;
@@ -575,6 +581,7 @@
 				B733C8F51F4BD8200019A8AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

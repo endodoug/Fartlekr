@@ -23,6 +23,7 @@
                             <fontDescription key="font" type="system" pointSize="18"/>
                             <connections>
                                 <action selector="startButtonTapped" destination="AgC-eL-Hgc" id="Jia-Ym-bhU"/>
+                                <segue destination="a3W-bj-Z5e" kind="push" id="b3m-z7-Prw"/>
                             </connections>
                         </button>
                     </items>
@@ -31,6 +32,22 @@
                     </connections>
                 </controller>
             </objects>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="uFB-zi-hvF">
+            <objects>
+                <controller id="a3W-bj-Z5e">
+                    <items>
+                        <button width="1" alignment="left" title="Random" id="67a-S9-Rxw">
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                        </button>
+                        <button width="1" alignment="left" title="Twenty" id="gsk-9R-0XN">
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="292" y="98"/>
         </scene>
     </scenes>
 </document>

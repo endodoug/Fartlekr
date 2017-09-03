@@ -46,7 +46,33 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="553" y="98"/>
+            <point key="canvasLocation" x="263" y="-176"/>
+        </scene>
+        <!--Fartlek-->
+        <scene sceneID="pBX-Gi-4yU">
+            <objects>
+                <controller identifier="Fartlek" title="Fartlek" hidesWhenLoading="NO" id="wos-hO-BUE" customClass="FartlekController" customModule="Fartlekr_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Warm-Up" id="EQu-n6-G9L">
+                            <color key="textColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <timer alignment="center" verticalAlignment="center" id="7Ye-EH-qco">
+                            <fontDescription key="font" type="boldSystem" pointSize="32"/>
+                            <calendarUnit key="units" minute="YES" second="YES"/>
+                        </timer>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Stop" id="JmG-zd-qUa">
+                            <connections>
+                                <action selector="stopButtonTapped" destination="wos-hO-BUE" id="Sr3-TS-mnI"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="timer" destination="7Ye-EH-qco" id="5ka-3A-5zL"/>
+                        <outlet property="workoutLabel" destination="EQu-n6-G9L" id="4vp-ja-0Qj"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="363" y="91"/>
         </scene>
     </scenes>
 </document>

@@ -20,6 +20,8 @@
 		B733C8E51F4BD8200019A8AC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B733C8E41F4BD8200019A8AC /* ExtensionDelegate.swift */; };
 		B733C8E71F4BD8200019A8AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B733C8E61F4BD8200019A8AC /* Assets.xcassets */; };
 		B7AEC3861F5116E0000F5C84 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AEC3851F5116E0000F5C84 /* MenuController.swift */; };
+		B7AEC38A1F5BA8C3000F5C84 /* FartlekController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AEC3891F5BA8C3000F5C84 /* FartlekController.swift */; };
+		B7AEC38C1F5BAC07000F5C84 /* TimerHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AEC38B1F5BAC07000F5C84 /* TimerHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		B733C8E61F4BD8200019A8AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B733C8E81F4BD8200019A8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7AEC3851F5116E0000F5C84 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		B7AEC3891F5BA8C3000F5C84 /* FartlekController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FartlekController.swift; sourceTree = "<group>"; };
+		B7AEC38B1F5BAC07000F5C84 /* TimerHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,10 +153,12 @@
 			isa = PBXGroup;
 			children = (
 				B733C8E21F4BD8200019A8AC /* InterfaceController.swift */,
+				B7AEC3891F5BA8C3000F5C84 /* FartlekController.swift */,
 				B7AEC3851F5116E0000F5C84 /* MenuController.swift */,
 				B733C8E41F4BD8200019A8AC /* ExtensionDelegate.swift */,
 				B733C8E61F4BD8200019A8AC /* Assets.xcassets */,
 				B733C8E81F4BD8200019A8AC /* Info.plist */,
+				B7AEC38B1F5BAC07000F5C84 /* TimerHelpers.swift */,
 			);
 			path = "Fartlekr WatchKit Extension";
 			sourceTree = "<group>";
@@ -307,6 +313,8 @@
 				B733C8E51F4BD8200019A8AC /* ExtensionDelegate.swift in Sources */,
 				B7AEC3861F5116E0000F5C84 /* MenuController.swift in Sources */,
 				B733C8E31F4BD8200019A8AC /* InterfaceController.swift in Sources */,
+				B7AEC38A1F5BA8C3000F5C84 /* FartlekController.swift in Sources */,
+				B7AEC38C1F5BAC07000F5C84 /* TimerHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

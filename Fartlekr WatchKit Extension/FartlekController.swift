@@ -9,17 +9,28 @@
 import WatchKit
 import Foundation
 
-
 class FartlekController: WKInterfaceController {
   
   @IBOutlet var workoutLabel: WKInterfaceLabel!
-  @IBOutlet var timer: WKInterfaceTimer!
+  @IBOutlet var runTimer: WKInterfaceTimer!
+  @IBOutlet var stopRunButton: WKInterfaceButton!
+  
+  var intervalTimer = Timer()
+  var isRunning: Bool = true
   
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
-    
-    timer.setDate(Date(timeIntervalSinceNow: randomTimer()))
-    timer.start()
+//    var timeInterval = randomTimer()
+//    runTimer.setDate(Date(timeIntervalSinceNow: timeInterval))
+//    if intervalTimer.isValid { intervalTimer.invalidate() }
+//    intervalTimer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(timerDidEnd(_:)), userInfo: nil, repeats: true)
+    workoutLabel.setText("Run!!")
+    stopRunButton.setTitle("Stop")
+    timerReset()
+  }
+  
+  @objc func timerDidEnd(_ timer: Timer) {
+    print("Timer ended")
   }
   
   override func willActivate() {
@@ -32,7 +43,25 @@ class FartlekController: WKInterfaceController {
     super.didDeactivate()
   }
   @IBAction func stopButtonTapped() {
-    timer.stop()
+    isRunning = !isRunning
+    runTimer.stop()
+    if isRunning {
+      stopRunButton.setTitle("Stop")
+      workoutLabel.setText("Run!!")
+    } else {
+      stopRunButton.setTitle("Run!")
+      workoutLabel.setText("Stopped")
+    }
   }
+  
+  func timerReset() {
+    let interval: TimeInterval = randomTimer()
+    runTimer.stop()
+    let time = Date(timeIntervalSinceNow: interval)
+    runTimer.setDate(time)
+    runTimer.start()
+  }
+  
+  
   
 }

@@ -67,12 +67,13 @@
                         </button>
                     </items>
                     <connections>
-                        <outlet property="timer" destination="7Ye-EH-qco" id="5ka-3A-5zL"/>
+                        <outlet property="runTimer" destination="7Ye-EH-qco" id="5ka-3A-5zL"/>
+                        <outlet property="stopRunButton" destination="JmG-zd-qUa" id="wMm-u9-b7i"/>
                         <outlet property="workoutLabel" destination="EQu-n6-G9L" id="4vp-ja-0Qj"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="453" y="79"/>
+            <point key="canvasLocation" x="356" y="282"/>
         </scene>
     </scenes>
 </document>

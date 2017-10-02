@@ -30,7 +30,8 @@ class FartlekController: WKInterfaceController {
   }
   
   @objc func timerDidEnd(_ timer: Timer) {
-    print("Timer ended")
+    isRunning = !isRunning
+    timerReset()
   }
   
   override func willActivate() {
@@ -42,15 +43,18 @@ class FartlekController: WKInterfaceController {
     // This method is called when watch view controller is no longer visible
     super.didDeactivate()
   }
+  
   @IBAction func stopButtonTapped() {
     isRunning = !isRunning
     runTimer.stop()
     if isRunning {
       stopRunButton.setTitle("Stop")
       workoutLabel.setText("Run!!")
+      timerReset()
     } else {
-      stopRunButton.setTitle("Run!")
+      stopRunButton.setTitle("Re-Start!")
       workoutLabel.setText("Stopped")
+      timerStop()
     }
   }
   
@@ -60,6 +64,14 @@ class FartlekController: WKInterfaceController {
     let time = Date(timeIntervalSinceNow: interval)
     runTimer.setDate(time)
     runTimer.start()
+    
+    if intervalTimer.isValid { intervalTimer.invalidate() }
+    intervalTimer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(timerDidEnd(_:)), userInfo: nil, repeats: true)
+    
+  }
+  
+  func timerStop() {
+    intervalTimer.invalidate()
   }
   
   

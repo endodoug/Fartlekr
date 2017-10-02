@@ -64,6 +64,8 @@ class FartlekController: WKInterfaceController {
     let time = Date(timeIntervalSinceNow: interval)
     runTimer.setDate(time)
     runTimer.start()
+    playHaptic(2)
+    
     
     if intervalTimer.isValid { intervalTimer.invalidate() }
     intervalTimer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(timerDidEnd(_:)), userInfo: nil, repeats: true)
@@ -74,6 +76,8 @@ class FartlekController: WKInterfaceController {
     intervalTimer.invalidate()
   }
   
-  
+  func playHaptic(_ value: Int) {
+    WKInterfaceDevice.current().play(.start)
+  }
   
 }
